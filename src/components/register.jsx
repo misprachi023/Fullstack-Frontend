@@ -12,7 +12,7 @@ import {
     Radio,
     HStack,
 	FormHelperText,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"; 
 /**
  * @author
  * @function Register
@@ -67,12 +67,12 @@ const Register = () => {
 				<FormLabel>Name</FormLabel>
 				<Input type="text" name="name" onChange={(e) => handlechange(e)} />
 				<FormLabel>Date of Birth</FormLabel>
-				<Input type="date" name="date" onChange={(e) => handlechange(e)} />
+				<Input type="date" name="dob"  onChange={(e) => handlechange(e)} />
 				<FormLabel>Gender </FormLabel>
 			    <RadioGroup defaultValue="Itachi">
 					
-						<Radio onChange={(e) => handlechange(e)}  value="male">Male</Radio>
-						<Radio onChange={(e) => handlechange(e)}  value="female">Female</Radio>
+						<Radio onChange={(e) => handlechange(e)}  name="gender" value="male">Male</Radio>
+						<Radio onChange={(e) => handlechange(e)} name="gender" value="female">Female</Radio>
 					
 				</RadioGroup>
 

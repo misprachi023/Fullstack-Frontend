@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
 		<ChakraProvider>
 			<BrowserRouter>
-				<App /> 
+				<App />
 			</BrowserRouter>
 		</ChakraProvider>
 	
