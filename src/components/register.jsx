@@ -26,18 +26,18 @@ const Register = () => {
         password: "",
     });
 
-	const handlechange = (e) => {
+	const handlechange = (e) => {                    
 		const { name, value } = e.target;
 		setUserDetails({
 			...userDetails,
-			[name]: value,
+			[name]: value,            
 		});
 	};
 
 	const handleSubmit = async(e) => {
 		e.preventDefault();   
 		console.log(userDetails);
-		const res= await fetch("https://tiny-cyan-squid-gown.cyclic.app/auth/register",{
+		const res= await fetch("https://tiny-cyan-squid-gown.cyclic.app/users/register",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"

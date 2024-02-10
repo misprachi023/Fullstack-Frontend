@@ -33,7 +33,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		console.log(userDetails);
 		e.preventDefault();
-		const res=await axios.post("https://tiny-cyan-squid-gown.cyclic.app/auth/login",userDetails,{withCredentials:true})
+		const res=await axios.post("https://tiny-cyan-squid-gown.cyclic.app/auth/users/login",userDetails,{withCredentials:true})
 		console.log(res.data);		
 	}; 
 	

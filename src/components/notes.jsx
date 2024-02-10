@@ -32,9 +32,9 @@ const Notes = (props) => {
     <>
     {notes?notes.map((item)=>{
       <Box key={item._id}>
-        <Heading>{item.email}</Heading>
+        <Heading>{item.body}</Heading>
         <Heading>{item.title}</Heading>
-        <p>{item.content}</p>
+        <p>{item.device}</p>
         <Button>Delete</Button> 
         <Button>Edit</Button>
       </Box>
