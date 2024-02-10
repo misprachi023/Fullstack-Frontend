@@ -13,7 +13,7 @@ const Notes = (props) => {
   useEffect(()=>{
     const getData=async()=>{
       try{
-        const res=await fetch("https://blue-green-goldfish-veil.cyclic.app/notes",{
+        const res=await fetch("https://tiny-cyan-squid-gown.cyclic.app/posts",{
           method:"GET",
           mod:"cors",
           credentials:"include"
@@ -35,7 +35,7 @@ const Notes = (props) => {
         <Heading>{item.email}</Heading>
         <Heading>{item.title}</Heading>
         <p>{item.content}</p>
-        <Button>Delete</Button>
+        <Button>Delete</Button> 
         <Button>Edit</Button>
       </Box>
     }):<Heading>Data could not fetch</Heading>}

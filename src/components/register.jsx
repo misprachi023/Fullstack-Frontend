@@ -21,7 +21,6 @@ import {
 const Register = () => {
 	const [userDetails, setUserDetails] = useState({
         name: "",
-        dob: "",
         gender: "",
         email: "",
         password: "",
@@ -38,7 +37,7 @@ const Register = () => {
 	const handleSubmit = async(e) => {
 		e.preventDefault();   
 		console.log(userDetails);
-		const res= await fetch("https://blue-green-goldfish-veil.cyclic.app/auth/register",{
+		const res= await fetch("https://tiny-cyan-squid-gown.cyclic.app/auth/register",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
@@ -66,8 +65,6 @@ const Register = () => {
 			<FormControl textAlign={"left"}>
 				<FormLabel>Name</FormLabel>
 				<Input type="text" name="name" onChange={(e) => handlechange(e)} />
-				<FormLabel>Date of Birth</FormLabel>
-				<Input type="date" name="dob"  onChange={(e) => handlechange(e)} />
 				<FormLabel>Gender </FormLabel>
 			    <RadioGroup defaultValue="Itachi">
 					

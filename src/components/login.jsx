@@ -14,30 +14,33 @@ import {
 /**
  * @author
  * @function Login
- **/
+ **/ 
 
 const Login = () => {
-	const [userDetails, setUserDetails] = useState({});
+	const [userDetails, setUserDetails] = useState({
+		
 
-	const handlechange = (e) => {
+	});
+
+	const handlechange = (e) => { 
 		const { name, value } = e.target;
 		setUserDetails({
-			...userDetails, //email:KXrYk@example.com,password:123
+			...userDetails, 
 			[name]: value,
-		});
-	};
+		})
+	};  
 
 	const handleSubmit = async (e) => {
 		console.log(userDetails);
 		e.preventDefault();
-		axios.defaults.withCredentials = true;
-		const res=await axios.post("https://blue-green-goldfish-veil.cyclic.app/auth/login",userDetails,{withCredentials:true})
+		const res=await axios.post("https://tiny-cyan-squid-gown.cyclic.app/auth/login",userDetails,{withCredentials:true})
 		console.log(res.data);		
-	};
-
+	}; 
+	
 	return (
 		<Box
 			padding={"2%"}
+			
 			boxShadow={
 				"rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
 			}
