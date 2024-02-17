@@ -31,9 +31,9 @@ const Notes = (props) => {
   return(
     <>
     {notes?notes.map((item)=>{
-      <Box key={item._id}>
-        <Heading>{item.body}</Heading>
+      <Box >
         <Heading>{item.title}</Heading>
+        <Heading>{item.body}</Heading>
         <p>{item.device}</p>
       </Box>
     }):<Heading>Data could not fetch</Heading>}
