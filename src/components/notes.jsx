@@ -35,8 +35,6 @@ const Notes = (props) => {
         <Heading>{item.body}</Heading>
         <Heading>{item.title}</Heading>
         <p>{item.device}</p>
-        <Button>Delete</Button> 
-        <Button>Edit</Button>
       </Box>
     }):<Heading>Data could not fetch</Heading>}
     </>
