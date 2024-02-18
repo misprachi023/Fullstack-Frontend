@@ -12,7 +12,6 @@ import {useNavigate} from "react-router-dom"
 const Notes = (props) => {
 	
 	
-	const {isLogin,setIsLogin}=useContext(AuthContext)
 	const [notes, setNotes] = React.useState([]);
 
 	const navigate=useNavigate();
