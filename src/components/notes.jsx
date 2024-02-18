@@ -32,14 +32,13 @@ const Notes = (props) => {
     <>
       <h1>posts</h1>
       {console.log(notes)}
-    {notes?notes.map((item)=>{
+    {notes.map((item)=>{
       <Box border={'1px solid black'} >
         <Heading>{item.title}</Heading>
         <Heading>{item.body}</Heading>
         <p>{item.device}</p>
       </Box>
-    }):<h1>data not fetched</h1>}
-      {console.log(notes)}
+    })}
     </>
   
    )
