@@ -30,6 +30,7 @@ const Notes = (props) => {
   },[])
   return(
     <>
+      <h1>notes</h1>
       {console.log("notes:"notes)}
     {notes.map((item)=>{
       <Box >
