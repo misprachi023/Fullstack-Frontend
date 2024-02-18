@@ -42,7 +42,7 @@ const Navbar = (props) => {
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
             <Link to='/login'>Login</Link>
             <Link to='/register'>signup</Link>
-            <Link to='/posts'>Post</Link>
+            <Link to='/posts'>Posts</Link>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -58,7 +58,7 @@ const Navbar = (props) => {
               <MenuList>
                 <MenuItem><Link to='/login'>Login</Link></MenuItem>
                 <MenuItem><Link to='/register'>signup</Link></MenuItem>
-                <MenuItem><Link to='/notes'>Notes</Link></MenuItem>
+                <MenuItem><Link to='/posts'>Posts</Link></MenuItem>
                 <MenuDivider />
                 <MenuItem>Link 3</MenuItem>
               </MenuList>
