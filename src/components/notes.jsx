@@ -30,7 +30,7 @@ const Notes = (props) => {
   },[])
   return(
     <>
-      {console.log(notes)}
+      {console.log("notes:"notes)}
     {notes.map((item)=>{
       <Box >
         <Heading>{item.title}</Heading>
