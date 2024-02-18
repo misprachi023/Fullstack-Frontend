@@ -39,6 +39,7 @@ const Notes = (props) => {
         <p>{item.device}</p>
       </Box>
     }):null}
+      {console.log(notes)}
     </>
   
    )
