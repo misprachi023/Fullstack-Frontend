@@ -32,13 +32,13 @@ const Notes = (props) => {
     <>
       
       {console.log("notes:"notes)}
-    {notes.map((item)=>{
+    {notes?notes.map((item)=>{
       <Box >
         <Heading>{item.title}</Heading>
         <Heading>{item.body}</Heading>
         <p>{item.device}</p>
       </Box>
-    })}
+    }):null}
     </>
   
    )
